@@ -1,0 +1,7 @@
+{
+  "name": "your-plugin-name",
+  "id": "your-plugin-id",
+  "api": "1.0.0",
+  "main": "dist/js/figma.js",
+  "ui": "dist/ui.html"
+}

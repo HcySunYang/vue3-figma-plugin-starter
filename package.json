@@ -1,0 +1,63 @@
+{
+  "name": "vue3-figma-plugin-starter",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/HcySunYang/vue3-figma-plugin-starter.git",
+  "author": "HcySunYang <HcySunYang@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --config build/base.js --watch",
+    "build": "NODE_ENV=development webpack --config build/base.js",
+    "commit": "git-cz",
+    "format": "prettier --write --parser typescript \"src/**/*.ts?(x)\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "postpublish": "git add CHANGELOG.md && git commit -m 'chore: changelog [ci skip]' && git push"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5",
+    "vue": "^3.0.0-beta.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@figma/plugin-typings": "^1.15.0",
+    "@hcysunyang/babel-plugin-vue-next-jsx": "^0.2.0",
+    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "css-loader": "^3.6.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-chain": "^6.5.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

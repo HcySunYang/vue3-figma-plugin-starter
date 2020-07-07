@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@hcysunyang/vue-next-jsx",
+      {
+        "source": "vue"
+      }
+    ]
+  ]
+}
