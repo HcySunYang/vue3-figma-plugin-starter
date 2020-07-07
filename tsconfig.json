@@ -17,5 +17,5 @@
     "rootDir": ".",
     "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
   },
-  "include": ["src"]
+  "include": ["src", "shims-css.d.ts"]
 }

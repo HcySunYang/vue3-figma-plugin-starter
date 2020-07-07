@@ -46,8 +46,7 @@ tsRule.include
 
 // CSS
 applyCss(config)
-applyExtractCss(config)
-applyStyle(config)
+isDEV ? applyStyle(config) : applyExtractCss(config)
 
 // Image
 applyImages(config)

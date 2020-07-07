@@ -1,4 +1,5 @@
 import { createApp, ref } from 'vue'
+import style from './style.module.css'
 
 createApp({
   setup() {
@@ -16,7 +17,7 @@ createApp({
 
     return () => (
       <div>
-        <h2>Hello Vue3 and Figma</h2>
+        <h2 class={{ [style.foo]: true }}>Byted Motion</h2>
         <p>
           Count: <input id="count" value={refCount.value} />
         </p>
