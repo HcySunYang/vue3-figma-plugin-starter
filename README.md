@@ -2,6 +2,10 @@
 
 Use Vue3 to build figma plugin
 
+- Use `webpack` to develop and build
+- Integrate [vue-next-jsx](https://github.com/HcySunYang/vue-next-jsx) for Vue3 `jsx/tsx`
+- Everything is out of the box
+
 ## Setup
 
 - clone this repo
