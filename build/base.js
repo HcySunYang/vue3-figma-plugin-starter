@@ -57,7 +57,9 @@ config.plugin('html-generate').use(HtmlWebpackPlugin, [
   {
     template: resolve(__dirname, '../src/ui/ui.html'),
     filename: 'ui.html',
-    chunks: ['ui']
+    chunks: ['ui'],
+    // Since we have inlined js code, don’t cache
+    cache: false
   }
 ])
 config
